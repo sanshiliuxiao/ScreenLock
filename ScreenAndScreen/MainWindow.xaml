@@ -1,0 +1,24 @@
+﻿<Window x:Class="ScreenAndScreen.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ScreenAndScreen"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        
+        WindowStartupLocation="CenterScreen"
+        Title="ScreenAndScreen" Height="200" Width="320" MouseLeftButtonDown="MainWindow_OnMouseLeftButtonDown">
+    <StackPanel  VerticalAlignment="Center" HorizontalAlignment="Center">
+        <TextBlock Name="StartUpTip" Opacity="0" Margin="20 0 20 20" FontSize="18">已设置开机自启</TextBlock>
+        <StackPanel Orientation="Horizontal" Margin="0 10">
+            <Button Name="StartUpButton" Margin="20 0" Width="60" Height="40" Click="StartUpTheApp">开机自启</Button>
+            <Button Name="CancelStartUpButton" Margin="20 0" Width="60" Height="40" Click="CancelStartUpTheApp">取消自启</Button>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="StartLockButton" Margin="20 0" Width="60" Height="40" Click="StartLock" HorizontalAlignment="Center" VerticalAlignment="Center">开启锁屏</Button>
+            <Button x:Name="ExitButton" Margin="20 0" Width="60" Height="40" Click="ExitLock" HorizontalAlignment="Center" VerticalAlignment="Center">退出应用</Button>
+        </StackPanel>
+        
+    </StackPanel>
+</Window>
