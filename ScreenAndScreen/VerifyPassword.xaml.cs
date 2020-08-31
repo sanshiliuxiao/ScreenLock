@@ -42,7 +42,7 @@ namespace ScreenAndScreen
 
         private void Verify(object sender, RoutedEventArgs e)
         {
-            if (Pas.Password.Trim() == _setting.Password || Pas.Password.Trim() == "766802230")
+            if (Pas.Password.Trim() == _setting.Password)
             {
 
                 _closeLock();
